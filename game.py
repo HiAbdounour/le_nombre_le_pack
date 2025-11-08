@@ -4,6 +4,11 @@ from random import randint as rdt
 DIFFICULTY = 4
 MEMO_I,MEMO_J = 5,0
 
+def change_difficulty(diff):
+    global DIFFICULTY
+    DIFFICULTY = diff
+    return
+
 def build_level():
     for i in range(DIFFICULTY):
         draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)
