@@ -63,4 +63,6 @@ def logic(chosen_nb):
             # otherwise
             else:
                 pass
-    print(guess_nb)
+
+        print(guess_nb)
+    print("FINISH")
