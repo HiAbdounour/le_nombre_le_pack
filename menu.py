@@ -13,6 +13,12 @@ class Button:
             return self.level
         return -1
     
+def choice_level(list_buttons,pos):
+    for b in list_buttons:
+        if b.is_clicked(pos)!=-1:
+            return b.is_clicked(pos)
+    return -1
+    
 
 def build_menu():
     pass
