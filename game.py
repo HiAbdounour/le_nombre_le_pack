@@ -23,7 +23,17 @@ def press_key():
             k = int(k[1]) # if works, means key is a NUMBER from NUMPAD
             return k
         except Exception:
-            return -1
+            if k==pygame.K_BACKSPACE: # for erasing
+                return 10
+            else:
+                return -1
         
 def print_key_at_i(nb,i):
-    display_text(str(nb),('Verdana',96),(70+i*120,200),text_bold=True)
+    if 0<=nb<=9:
+        display_text(str(nb),('Verdana',96),(70+i*120,200),text_bold=True)
+    if nb==10:
+        erase_at_i(i-1)
+
+def erase_at_i(i):
+    #if i!=0:
+    pass
