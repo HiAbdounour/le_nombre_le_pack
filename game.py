@@ -2,6 +2,7 @@ from noormi.gaming import *
 from random import randint as rdt
 
 DIFFICULTY = 4
+MEMO_I,MEMO_J = 0,0   # subdivision : 25/25
 
 def build_level():
     for i in range(DIFFICULTY):
@@ -69,5 +70,21 @@ def logic(chosen_nb):
             check = True
             for m in range(DIFFICULTY):
                 erase_at_i(m)
+    memorise(guess_nb,chosen_nb)
 
-    return int(guess_nb)==chosen_nb
+
+def memorise(guess_nb,chosen_nb):
+    global MEMO_I,MEMO_J
+    clr = PYGAME_GOLD
+    if int(guess_nb)<chosen_nb:
+        clr = PYGAME_RED
+    elif int(guess_nb)>chosen_nb:
+        clr = PYGAME_GREEN
+
+    display_text(guess_nb,("Verdana",12),(MEMO_I,MEMO_J),clr,True)
+    MEMO_I += 25
+    if MEMO_I>=500:
+        MEMO_I = 0
+        MEMO_J+=25
+    if 150<=MEMO_J<=250:
+        MEMO_J = 275   
