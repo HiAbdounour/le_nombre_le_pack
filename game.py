@@ -10,7 +10,7 @@ def build_level():
     return
 
 def choose_number():
-    return f"{rdt(1,10**DIFFICULTY-1):0{DIFFICULTY}d}"
+    return rdt(1,10**DIFFICULTY-1)
 
 
 def press_key():
