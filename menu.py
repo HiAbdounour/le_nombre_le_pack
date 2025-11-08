@@ -20,7 +20,7 @@ def choice_level(list_buttons,pos):
     return -1
 
 def build_menu():
-    display_text("Le Nombre",("Comic sans MS",90),(95,80),text_bold=True)
+    display_text("Le Nombre",("Comic sans MS",90),(15,80),text_bold=True)
     buttons_list = []
     for i in range(3,7):
         display_text("Chercher des nombres de",("Comic sans MS",25),(105,230),text_bold=True)
