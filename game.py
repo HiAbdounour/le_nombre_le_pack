@@ -66,8 +66,6 @@ def logic(chosen_nb):
             else:
                 pass
         elif k==20 and i==DIFFICULTY:
-            print(int(guess_nb)==chosen_nb)
             check = True
 
-        print(guess_nb)
-    print("FINISH")
+    return int(guess_nb)==chosen_nb

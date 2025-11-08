@@ -7,11 +7,17 @@ clear_window(PYGAME_GRAY)
 
 build_level()
 chosen_nb = choose_number()
-logic(chosen_nb)
 
+ingame = True
 
 running = True
 while running:
+
+    if ingame:
+        ingame = logic(chosen_nb)
+        ingame = False # for testing
+
+
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             running = False
