@@ -6,10 +6,9 @@ clear_window(PYGAME_GRAY)
 
 
 build_level()
-print(choose_number())
+chosen_nb = choose_number()
 
-for i in range(100):
-    print(press_key())
+
 
 running = True
 while running:
