@@ -74,11 +74,11 @@ def logic(chosen_nb):
 
 def memorise(guess_nb,chosen_nb):
     global MEMO_I,MEMO_J
-    clr = PYGAME_GOLD
+    clr = PYGAME_GREEN
     if int(guess_nb)<chosen_nb:
         clr = PYGAME_RED
     elif int(guess_nb)>chosen_nb:
-        clr = PYGAME_GREEN
+        clr = PYGAME_BLUE
 
     display_text(guess_nb,("Verdana",12),(MEMO_I,MEMO_J),clr,True)
     MEMO_I += 45
