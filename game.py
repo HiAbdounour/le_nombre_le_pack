@@ -71,7 +71,7 @@ def logic(chosen_nb):
             for m in range(DIFFICULTY):
                 erase_at_i(m)
     memorise(guess_nb,chosen_nb)
-
+    return not(int(guess_nb)==chosen_nb)
 
 def memorise(guess_nb,chosen_nb):
     global MEMO_I,MEMO_J

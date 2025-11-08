@@ -15,7 +15,6 @@ while running:
 
     if ingame:
         ingame = logic(chosen_nb) # note : doesn't return anything
-        ingame = False # for testing
 
 
     for event in pygame.event.get():
