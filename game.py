@@ -67,5 +67,7 @@ def logic(chosen_nb):
                 pass
         elif k==20 and i==DIFFICULTY:
             check = True
+            for m in range(DIFFICULTY):
+                erase_at_i(m)
 
     return int(guess_nb)==chosen_nb
