@@ -1,4 +1,4 @@
-from noormi.gaming import *
+from noormiextracts import *
 
 class Button:
     def __init__(self,lvl:int,rect:tuple[int,int,pygame.Color],txt_rect:tuple[str,int,int,pygame.Color]):

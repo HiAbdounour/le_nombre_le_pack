@@ -1,4 +1,4 @@
-from noormi.gaming import *
+from noormiextracts import *
 from random import randint as rdt
 
 DIFFICULTY = 4

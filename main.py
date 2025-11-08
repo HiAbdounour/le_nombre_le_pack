@@ -1,4 +1,4 @@
-from noormi.gaming import *
+from noormiextracts import *
 from game import build_level, choose_number, logic, reset_memos, change_difficulty
 from menu import build_menu, choice_level
 
