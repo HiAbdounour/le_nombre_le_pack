@@ -19,7 +19,7 @@ Deux moyens existent pour télécharger le code source.
 
 ### Depuis la Release GitHub
 
-Rendez-vous dans la section  [Releases](https://github.com/HiAbdounour/le_mot_le_pack/releases)  et sélectionnez la version qui vous intéresse (la première est la plus récente).\ 
+Rendez-vous dans la section  [Releases](https://github.com/HiAbdounour/le_nombre_le_pack/releases)  et sélectionnez la version qui vous intéresse (la première est la plus récente).\ 
 Après un message descriptif de la Release, vous trouverez un dossier .zip et un dossier .rar contenant tous les fichiers du repo. Il vous suffit de télécharger l'un des dossiers, de le dézipper puis de lancer le fichier main.py (depuis un IDE ou depuis le terminal en tapant ``python main.py``).
 
 ### Depuis le terminal
