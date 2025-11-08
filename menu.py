@@ -18,7 +18,14 @@ def choice_level(list_buttons,pos):
         if b.is_clicked(pos)!=-1:
             return b.is_clicked(pos)
     return -1
-    
 
 def build_menu():
-    pass
+    display_text("Le Nombre",("Comic sans MS",90),(95,80),text_bold=True)
+    buttons_list = []
+    for i in range(3,7):
+        display_text("Chercher des nombres de",("Comic sans MS",25),(105,230),text_bold=True)
+        display_text("chiffres",("Comic sans MS",25),(205,330),text_bold=True)
+        b = Button(i-2,(100*(i-2),300,pygame.Color(60,60,60)),(str(i-2),100*(i-2)-13,275,PYGAME_WHITE))
+        buttons_list.append(b)
+        b.display()
+    return buttons_list
