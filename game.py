@@ -80,8 +80,8 @@ def memorise(guess_nb,chosen_nb):
     elif int(guess_nb)>chosen_nb:
         clr = PYGAME_BLUE
 
-    display_text(guess_nb,("Verdana",12),(MEMO_I,MEMO_J),clr,True)
-    MEMO_I += 45
+    display_text(guess_nb,("Verdana",18),(MEMO_I,MEMO_J),clr,True)
+    MEMO_I += 55
     if MEMO_I>=455:
         MEMO_I = 5
         MEMO_J+=20
