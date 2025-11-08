@@ -14,6 +14,9 @@ def choose_number():
 
 def press_key():
     k = wait_key()
+    print(k)
+    if k=="backspace": # for erasing
+        return 10
     try:
         k = int(k) # if works, means key is CAPS LOCK NUMBER
         # after testing, it seems to work regardless CAPS LOCK activation
@@ -23,10 +26,7 @@ def press_key():
             k = int(k[1]) # if works, means key is a NUMBER from NUMPAD
             return k
         except Exception:
-            if k==pygame.K_BACKSPACE: # for erasing
-                return 10
-            else:
-                return -1
+            return -1
         
 def print_key_at_i(nb,i):
     if 0<=nb<=9:
@@ -38,6 +38,7 @@ def print_key_at_i(nb,i):
     return -1 # means do nothing
 
 def erase_at_i(i):
+    print('hi')
     draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)
 
 
@@ -48,7 +49,7 @@ def logic(chosen_nb):
         k = press_key()
         if k!=-1:
             i_ = print_key_at_i(k,i)
-            
+
             # something wrong happened
             if i_==-1:
                 pass
