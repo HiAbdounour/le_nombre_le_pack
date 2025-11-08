@@ -30,7 +30,7 @@ def press_key():
         
 def print_key_at_i(nb,i):
     if 0<=nb<=9:
-        display_text(str(nb),('Verdana',96),(70+i*120,200),text_bold=True)
+        display_text(str(nb),('Verdana',96),(35+i*120,140),text_bold=True)
         return i+1
     if nb==10 and i!=0:
         erase_at_i(i-1)
