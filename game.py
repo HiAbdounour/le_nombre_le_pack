@@ -11,7 +11,7 @@ def change_difficulty(diff):
 
 def reset_memos():
     global MEMO_I,MEMO_J
-    MEMO_J=MEMO_I=0
+    MEMO_I,MEMO_J = 5,0
     return
 
 def build_level():
