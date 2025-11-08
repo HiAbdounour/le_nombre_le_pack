@@ -17,6 +17,7 @@ while running:
         click_pos = wait_clic()
         diff = choice_level(BUTTONS_LIST,click_pos)
         if diff!=-1:
+            clear_window(PYGAME_GRAY)
             chosen_nb = choose_number()
             inmenu = False
             ingame = True
@@ -26,6 +27,7 @@ while running:
         ingame = logic(chosen_nb) # note : doesn't return anything
         if not ingame:
             inmenu = True
+            clear_window(PYGAME_GRAY)
 
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
