@@ -9,6 +9,11 @@ def change_difficulty(diff):
     DIFFICULTY = diff
     return
 
+def reset_memos():
+    global MEMO_I,MEMO_J
+    MEMO_J=MEMO_I=0
+    return
+
 def build_level():
     for i in range(DIFFICULTY):
         draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)

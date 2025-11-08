@@ -1,5 +1,5 @@
 from noormi.gaming import *
-from game import build_level, choose_number, logic, change_difficulty
+from game import build_level, choose_number, logic, reset_memos, change_difficulty
 from menu import build_menu, choice_level
 
 init_graphic(500,500,"Le Nombre")
@@ -19,6 +19,7 @@ while running:
         if diff!=-1:
             clear_window(PYGAME_GRAY)
             change_difficulty(diff)
+            reset_memos()
             chosen_nb = choose_number()
             inmenu = False
             ingame = True
