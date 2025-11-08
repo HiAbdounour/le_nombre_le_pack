@@ -12,3 +12,7 @@ class Button:
         if self.rect[0]-25<=pos.x<=self.rect[0]+25 and self.rect[1]-25<=pos.y<=self.rect[1]+25:
             return self.level
         return -1
+    
+
+def build_menu():
+    pass
