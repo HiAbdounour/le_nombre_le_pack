@@ -38,4 +38,4 @@ def print_key_at_i(nb,i):
     return -1 # means do nothing
 
 def erase_at_i(i):
-    pass
+    draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)
