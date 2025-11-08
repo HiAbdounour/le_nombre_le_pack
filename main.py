@@ -15,6 +15,7 @@ while running:
 
     if ingame:
         ingame = logic(chosen_nb)
+        print(ingame)
         ingame = False # for testing
 
 
