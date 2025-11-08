@@ -59,7 +59,7 @@ def logic(chosen_nb):
             # completing
             elif i_>i:
                 i = i_
-                guess_nb = str(k)+guess_nb
+                guess_nb = guess_nb+str(k)
             # otherwise
             else:
                 pass
