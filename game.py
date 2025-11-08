@@ -24,3 +24,6 @@ def press_key():
             return k
         except Exception:
             return -1
+        
+def print_key_at_i(nb,i):
+    display_text(str(nb),('Verdana',96),(70+i*120,200),text_bold=True)
