@@ -1,10 +1,10 @@
 from noormi.gaming import *
-from game import build_level
+from game import build_level, DIFFICULTY
 
 init_graphic(500,500,"Le Nombre")
 clear_window(PYGAME_GRAY)
 
-build_level()
+build_level(DIFFICULTY)
 
 
 running = True
