@@ -17,6 +17,8 @@ def press_key():
     print(k)
     if k=="backspace": # for erasing
         return 10
+    if k=="return": # for validating
+        return 20
     try:
         k = int(k) # if works, means key is CAPS LOCK NUMBER
         # after testing, it seems to work regardless CAPS LOCK activation
@@ -29,7 +31,7 @@ def press_key():
             return -1
         
 def print_key_at_i(nb,i):
-    if 0<=nb<=9:
+    if 0<=nb<=9 and i<DIFFICULTY:
         display_text(str(nb),('Verdana',96),(35+i*120,140),text_bold=True)
         return i+1
     if nb==10 and i!=0:
@@ -38,18 +40,17 @@ def print_key_at_i(nb,i):
     return -1 # means do nothing
 
 def erase_at_i(i):
-    print('hi')
     draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)
 
 
 def logic(chosen_nb):
     guess_nb = ""
     i=0
-    while len(guess_nb)!=DIFFICULTY:
+    check = False
+    while not check:
         k = press_key()
-        if k!=-1:
+        if k!=-1 and k!=20:
             i_ = print_key_at_i(k,i)
-
             # something wrong happened
             if i_==-1:
                 pass
@@ -64,6 +65,9 @@ def logic(chosen_nb):
             # otherwise
             else:
                 pass
+        elif k==20:
+            print(int(guess_nb)==chosen_nb)
+            check = True
 
         print(guess_nb)
     print("FINISH")
