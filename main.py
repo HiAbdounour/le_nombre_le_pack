@@ -27,6 +27,7 @@ while running:
         build_level()
         ingame = logic(chosen_nb) # note : doesn't return anything
         if not ingame:
+            pygame.time.delay(1000) # we need to see we win
             inmenu = True
             clear_window(PYGAME_GRAY)
 
