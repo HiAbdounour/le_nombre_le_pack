@@ -16,6 +16,7 @@ def press_key():
     k = wait_key()
     try:
         k = int(k) # if works, means key is CAPS LOCK NUMBER
+        # after testing, it seems to work regardless CAPS LOCK activation
         return k
     except Exception:
         try:
