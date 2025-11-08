@@ -39,3 +39,28 @@ def print_key_at_i(nb,i):
 
 def erase_at_i(i):
     draw_rectangle(Point(70+i*120,200),100,100,pygame.Color(60,60,60),1)
+
+
+def logic(chosen_nb):
+    guess_nb = ""
+    i=0
+    while len(guess_nb)!=DIFFICULTY:
+        k = press_key()
+        if k!=-1:
+            i_ = print_key_at_i(k,i)
+            
+            # something wrong happened
+            if i_==-1:
+                pass
+            # erasing
+            elif i_<i:
+                i = i_
+                guess_nb = guess_nb[:len(guess_nb)-1]
+            # completing
+            elif i_>i:
+                i = i_
+                guess_nb = str(k)+guess_nb
+            # otherwise
+            else:
+                pass
+    print(guess_nb)
