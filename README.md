@@ -13,14 +13,14 @@ La partie se termine lorsque le joueur a trouvé le nombre caché. Ensuite, elle
 *\*En théorie, les essais sont illimités. En pratique, la liste des nombres essayés devient si grande qu'elle dépasse la taille de la fenêtre graphique. À partir de ce moment, il devient difficile de trouver le nombre caché.*
 
 ## Comment jouer ? 
-Ce jeu est (pour le moment) disponible uniquement sous forme Python : il est nécessaire de télécharger le code source pour pouvoir y jouer. \
+Ce jeu fonctionne avec Python : il est nécessaire de télécharger le code source pour pouvoir y jouer. \
 Version PC uniquement.\
 Deux moyens existent pour télécharger le code source.
 
 ### Depuis la Release GitHub
 
-Rendez-vous dans la section  [Releases](https://github.com/HiAbdounour/le_nombre_le_pack/releases)  et sélectionnez la version qui vous intéresse (la première est la plus récente).\ 
-Après un message descriptif de la Release, vous trouverez un dossier .zip et un dossier .rar contenant tous les fichiers du repo. Il vous suffit de télécharger l'un des dossiers, de le dézipper puis de lancer le fichier main.py (depuis un IDE ou depuis le terminal en tapant ``python main.py``).
+Rendez-vous dans la section  [Releases](https://github.com/HiAbdounour/le_nombre_le_pack/releases) et sélectionnez la version qui vous intéresse (la première est la plus récente).\ 
+Après un message descriptif de la Release, vous trouverez un dossier .zip et un dossier .rar contenant tous les fichiers du repo. Il vous suffit de télécharger l'un des dossiers, de le dézipper puis de lancer le fichier ``main.py`` (depuis le terminal en tapant ``python main.py`` ou depuis un IDE).
 
 ### Depuis le terminal
 
