@@ -32,6 +32,7 @@ Ensuite, tapez :
 Cette instruction va directement télécharger le code source sur votre machine.\
 Pour lancer le jeu, il suffit de taper
 ```
+	cd le_nombre_le_pack
 	python main.py
 ```
 
