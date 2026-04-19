@@ -1,4 +1,7 @@
 # Le Nombre (Le Pack)
+
+*Note : Le Nombre est un mini-jeu de la série Le Pack. À terme, il sera disponible uniquement à partir du repo contenant la suite complète.*
+
 ## Présentation du jeu
 Le Nombre est un jeu de devinette simpliste.
 
